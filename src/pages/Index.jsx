@@ -45,7 +45,6 @@ export const loader = () => {
 const Index = () => {
 
   const customers= useLoaderData();
-  console.log(customers);
 
   return (
     <div>
@@ -63,7 +62,7 @@ const Index = () => {
               <tbody>
                 {
                   customers.map(customer => (
-                    <Customer {...customer} />
+                    <Customer key={customer.id} {...customer} />
                   ))
                 }
 

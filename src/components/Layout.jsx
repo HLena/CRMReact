@@ -18,7 +18,7 @@ const Layout = () => {
     }
   ]
   return (
-    <div className="md:flex md:min-h-screen">
+    <div className="md:flex md:min-h-screen bg-gray-50">
       <aside className="md:w-1/4 lg:w-1/5 bg-sky-500 px-3 py-10 m-3 rounded-xl">
         <h2 className="text-white font-bold text-lg">CRM - clientes</h2>
         <nav className="mt-10">

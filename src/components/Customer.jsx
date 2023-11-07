@@ -1,6 +1,5 @@
 
 const Customer = ({
-    id,
     name,
     phone, 
     email, 
@@ -8,7 +7,7 @@ const Customer = ({
 }) => {
 
   return (
-    <tr key={id} className="border-b">
+    <tr className="border-b">
         <td className="p-2">
             <p className="text-lg text-gray-800">{name}</p>
             <p className="text-xs">{emprise}</p>
@@ -21,7 +20,7 @@ const Customer = ({
                 <strong className="uppercase">email</strong>: {email}
             </p>
         </td>
-        <td className="flex gap-1 p-2">
+        <td className="flex gap-1 p-2 justify-center ">
             <button className="uppercase text-xs font-bold text-sky-600">editar</button>
             <button className="uppercase text-xs font-bold text-red-600">eliminar</button>
 
