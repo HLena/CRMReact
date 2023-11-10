@@ -6,6 +6,9 @@ import Layout from './components/Layout';
 import NewCustomer, {action as newCustomerAction } from './pages/NewCustomer';
 import Index, { loader as loaderCustomer } from './pages/Index';
 import Error  from './pages/Error';
+import EditCustomer, { 
+  action as editCustomerAction,
+  loader as editCustomerLoader } from './pages/EditCustomer';
 
 
 const router = createBrowserRouter([
@@ -22,7 +25,15 @@ const router = createBrowserRouter([
       {
         path: '/customer/new',
         element: <NewCustomer/>,
-        action: newCustomerAction
+        action: newCustomerAction,
+        errorElement: <Error/>
+      },
+      {
+        path: '/customer/:customerId/edit',
+        element:<EditCustomer/>,
+        loader: editCustomerLoader,
+        action: editCustomerAction,
+        errorElement: <Error/>
       }
     ]
   }

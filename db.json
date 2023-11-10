@@ -1,11 +1,12 @@
 {
   "customers": [
     {
-      "id": 1,
-      "name": "Juan",
-      "phone": 102013313,
+      "name": "Juanita",
+      "emprise": "Codigo Con Juan",
       "email": "juan@juan.com",
-      "emprise": "Codigo Con Juan"
+      "phone": "102013313",
+      "notas": "nueva Nota",
+      "id": 1
     },
     {
       "id": 2,
@@ -36,11 +37,11 @@
       "emprise": "Codigo Con Juan"
     },
     {
-      "nombre": "Juan",
-      "empresa": "70348166",
+      "name": "Pepito",
+      "emprise": "",
       "email": "gordillo.vi20@gmail.com",
-      "telefono": "983863399",
-      "notas": "",
+      "phone": "",
+      "notas": "Nueva Nota",
       "id": 6
     },
     {
