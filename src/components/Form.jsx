@@ -11,7 +11,7 @@ const Form = ({cliente}) => {
                     type="text"
                     className="mt-2 block w-full p-3 bg-gray-50"
                     placeholder="Nombre del Cliente"
-                    name="nombre"
+                    name="name"
                 />
             </div>
             <div className="mb-4">
@@ -24,7 +24,7 @@ const Form = ({cliente}) => {
                     type="text"
                     className="mt-2 block w-full p-3 bg-gray-50"
                     placeholder="Empresa del Cliente"
-                    name="empresa"
+                    name="enterprise"
                 />
             </div>
 
@@ -52,7 +52,7 @@ const Form = ({cliente}) => {
                     type="tel"
                     className="mt-2 block w-full p-3 bg-gray-50"
                     placeholder="Teléfono del Cliente"
-                    name="telefono"
+                    name="phone"
                 />
             </div>
 

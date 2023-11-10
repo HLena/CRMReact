@@ -1,7 +1,8 @@
-import { Form as FormRRD, useActionData } from "react-router-dom";
+import { Form as FormRRD, redirect, useActionData } from "react-router-dom";
 import Form from "../components/Form";
 import { isEmail } from "../helper/validations";
 import Error from "../components/Error";
+import { postCustomer } from "../data/customers";
 
 export const action = async ({request}) => {
   const formData = await request.formData();
@@ -18,7 +19,8 @@ export const action = async ({request}) => {
   if(errors.keys().length) {
     return errors;
   }
-  return errors
+  await postCustomer(data);
+  return redirect('/')
 }
 
 const NewCustomer = () => {
