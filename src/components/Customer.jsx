@@ -1,10 +1,14 @@
+import { useNavigate } from "react-router-dom"
 
 const Customer = ({
     name,
     phone, 
     email, 
-    emprise
+    emprise,
+    id
 }) => {
+
+    const navigate = useNavigate();
 
   return (
     <tr className="border-b">
@@ -21,8 +25,11 @@ const Customer = ({
             </p>
         </td>
         <td className="flex gap-1 p-2 justify-center ">
-            <button className="uppercase text-xs font-bold text-sky-600">editar</button>
-            <button className="uppercase text-xs font-bold text-red-600">eliminar</button>
+            <button 
+                onClick={() => navigate(`/customer/${id}/edit`) }
+                className="uppercase text-xs font-bold text-sky-600">editar</button>
+            <button 
+                className="uppercase text-xs font-bold text-red-600">eliminar</button>
 
         </td>
     </tr>
